@@ -1,0 +1,111 @@
+body{
+    background-color: #02010A;
+    font-family: 'Dancing Script', cursive;
+    -webkit-animation: slidein 2s;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+@keyframes slidein{
+    0%{
+        margin-top: 150%;
+    }
+    60%{
+        margin-top: -10%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+a{
+    color: white; 
+}
+header{
+    color: white;
+    text-shadow: 2px 2px #02010a;
+    columns: 1;
+    background-color: #5b7989;
+    border-radius: 10px 10px 0px 0px;
+}
+.contenedor{
+    color: white;
+    text-shadow: 2px 2px #02010a;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color:  #d5c75f;
+}
+.contenedor img{
+    box-shadow: 2px 2px 2px #02010A;
+    width: 33%;
+}
+#imagen1{
+    filter: blur(10px);
+}
+#imagen3{
+    filter: sepia(90%);
+}
+#imagen2, #imagen4, #imagen6{
+    filter: grayscale(100%);
+}
+
+footer{
+    border-radius: 0px 0px 10px 10px;
+    background-color: #C6D5C5;
+    color: black;
+    text-shadow: none;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 2rem;
+}
+footer img{
+    width: 33%;
+}
+.contacto{
+    -webkit-column-count: 1;
+    width: 25%;
+}
+
+.social{
+    -webkit-column-count: 1;
+    width: 25%;
+}
+#imagen7{
+    border-radius: 50px;
+}
+#imagen8{
+    border-radius: 90px;
+}
+#imagen9{
+    border-radius: 82px;
+}
+.Termino{
+    column-count: 1;
+    width: 25%;
+}
+@media screen and (max-width: 900px) {
+    header{
+        text-align: center;
+    }
+    .contenedor{
+        width: 100%;
+        background-color: #5b7989;
+        color: white;
+        text-shadow: 2px 2px #02010a;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .contenedor img{
+        width: 100%;
+    }
+    footer{
+        -webkit-column-count: 1;
+    }
+    #imagen7{
+        border-radius: 50px;
+    }
+    #imagen8{
+        border-radius: 90px;
+    }
+    #imagen9{
+        border-radius: 90px;
+    }
+}
